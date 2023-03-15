@@ -1,0 +1,319 @@
+{
+    "info": {
+        "_postman_id": "fdee7e19-31fc-49e5-adef-de0d500b3292",
+        "name": "sa",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "13492211"
+    },
+    "item": [{
+            "name": "member",
+            "item": [{
+                    "name": "adress",
+                    "item": [{
+                            "name": "get",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{url}}/member/:parentId/address",
+                                    "host": ["{{url}}"],
+                                    "path": ["member", ":parentId", "address"],
+                                    "variable": [{
+                                        "key": "parentId",
+                                        "value": ""
+                                    }]
+                                }
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "upset",
+                            "request": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\r\n    \"address\": \"99\",\r\n    \"sub_district\": \"บางนาค\",\r\n    \"district\": \"เมืองนราธิวาส\",\r\n    \"province\": \"นราธิวาส\",\r\n    \"post_code\": \"96000\"\r\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{url}}/member/:parentId/address",
+                                    "host": ["{{url}}"],
+                                    "path": ["member", ":parentId", "address"],
+                                    "variable": [{
+                                        "key": "parentId",
+                                        "value": ""
+                                    }]
+                                }
+                            },
+                            "response": []
+                        }
+                    ]
+                },
+                {
+                    "name": "address-delivery",
+                    "item": [{
+                            "name": "get",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{url}}/member/:parentId/address-delivery",
+                                    "host": ["{{url}}"],
+                                    "path": ["member", ":parentId", "address-delivery"],
+                                    "variable": [{
+                                        "key": "parentId",
+                                        "value": ""
+                                    }]
+                                }
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "upset",
+                            "request": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\r\n    \"address\": \"99\",\r\n    \"sub_district\": \"บางนาค\",\r\n    \"district\": \"เมืองนราธิวาส\",\r\n    \"province\": \"นราธิวาส\",\r\n    \"post_code\": \"96000\"\r\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{url}}/member/:parentId/address-delivery",
+                                    "host": ["{{url}}"],
+                                    "path": ["member", ":parentId", "address-delivery"],
+                                    "variable": [{
+                                        "key": "parentId",
+                                        "value": ""
+                                    }]
+                                }
+                            },
+                            "response": []
+                        }
+                    ]
+                },
+                {
+                    "name": "package-use",
+                    "item": [{
+                            "name": "getall",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{url}}/member/:parentId/package-use",
+                                    "host": ["{{url}}"],
+                                    "path": ["member", ":parentId", "package-use"],
+                                    "variable": [{
+                                        "key": "parentId",
+                                        "value": ""
+                                    }]
+                                }
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "create",
+                            "request": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "\r\n{\r\n    \"packageid\":\"93f9acd5-7b7b-4720-8945-d8c7c5b1014e\"\r\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{url}}/member/:parentId/package-use",
+                                    "host": ["{{url}}"],
+                                    "path": ["member", ":parentId", "package-use"],
+                                    "variable": [{
+                                        "key": "parentId",
+                                        "value": ""
+                                    }]
+                                }
+                            },
+                            "response": []
+                        }
+                    ]
+                },
+                {
+                    "name": "getall",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{url}}/member/",
+                            "host": ["{{url}}"],
+                            "path": ["member", ""]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "create",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"first_name\":\"test001\",\r\n    \"last_name\":\"test001\",\r\n    \"birth_day\":\"2023-03-12\",\r\n    \"number_phone\":\"0900000001\"\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{url}}/member",
+                            "host": ["{{url}}"],
+                            "path": ["member"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "update",
+                    "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"first_name\":\"test\",\r\n    \"last_name\":\"test\",\r\n    \"birth_day\":\"2023-03-12\"\r\n   \r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{url}}/member/c4c9a36a-e1aa-47ca-abf4-adf16c551310",
+                            "host": ["{{url}}"],
+                            "path": ["member", "c4c9a36a-e1aa-47ca-abf4-adf16c551310"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "delete",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{url}}/member/c4c9a36a-e1aa-47ca-abf4-adf16c551310",
+                            "host": ["{{url}}"],
+                            "path": ["member", "c4c9a36a-e1aa-47ca-abf4-adf16c551310"]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "package",
+            "item": [{
+                    "name": "getall",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{url}}/package",
+                            "host": ["{{url}}"],
+                            "path": ["package"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "create",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"package_name\": \"package01\",\r\n    \"package_detail\": \"package01\",\r\n    \"date_use\": 30,\r\n    \"service_charge\": 120\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{url}}/package",
+                            "host": ["{{url}}"],
+                            "path": ["package"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "update",
+                    "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"package_name\": \"test update\",\r\n    \"package_detail\": \"test update\",\r\n    \"date_use\": 30,\r\n    \"service_charge\": 159\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{url}}/package/:id",
+                            "host": ["{{url}}"],
+                            "path": ["package", ":id"],
+                            "variable": [{
+                                "key": "id",
+                                "value": ""
+                            }]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "report",
+            "item": [{
+                    "name": "Report-Newmember-today",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{url}}/report/member-new-today",
+                            "host": ["{{url}}"],
+                            "path": ["report", "member-new-today"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Report-Member-Usepackage-today",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{url}}/report/member-use-package-today",
+                            "host": ["{{url}}"],
+                            "path": ["report", "member-use-package-today"]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
+}

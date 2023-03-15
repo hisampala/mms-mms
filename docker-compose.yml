@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:15.1-alpine
+    environment:
+      POSTGRES_USER: "postgresql"
+      POSTGRES_PASSWORD: "postgresql"
+      POSTGRES_DB: "Sa-Dev"
+      PGDATA: "/var/lib/postgresql/data"
+      TZ: "Asia/Bangkok"
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db/db-init/init.sql:/docker-entrypoint-initdb.d/1-portal.sql
+  app:
+    depends_on:
+      - postgres
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
